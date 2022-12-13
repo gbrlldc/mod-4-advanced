@@ -76,13 +76,13 @@ def relationship_status(from_member, to_member, social_graph):
       followed_by = True
 
   if follower is True and followed_by is False:
-    return 'Follower'
+    return 'follower'
   elif follower is False and followed_by is True:
-    return 'Followed by'
+    return 'followed by'
   elif follower and followed_by is True:
-    return 'Friends'
+    return 'friends'
   else:
-    return 'No relationship'
+    return 'no relationship'
 
 
 print("I. Relationship Status")
